@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced dropdown menu </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="settings">
+        <div class="wrapper">
+            <ul class="menu-bar">
+                <li>
+                    <div class="icon"><svg viewbox="0 0 48 48"><path fill="currentColor" d="m14 44-8-8 8-8 2.1 2.2-4.3 4.3H35v-8h3v11H11.8l4.3 4.3Zm9.3-14.1v-9.45h-2.8V18h5.25v11.9ZM10 21.5v-11h26.2l-4.3-4.3L34 4l8 8-8 8-2.1-2.2 4.3-4.3H13v8Z"/></svg></div>Repeat one
+                </li>
+                <li class="drop" data-item="speed">
+                    <div class="icon"><svg viewbox="0 0 48 48"><path fill="currentColor" d="M8.3 36.3q-1.9-2.25-2.975-5.025Q4.25 28.5 4.05 25.5h3.1q.25 2.35 1.1 4.55.85 2.2 2.35 4ZM4.05 21.5q.1-3 1.225-5.75T8.3 10.7l2.3 2.25Q9.15 14.85 8.275 17 7.4 19.15 7.15 21.5Zm18 22.05q-2.95-.4-5.7-1.4-2.75-1-5.1-2.75l2.3-2.4q1.9 1.3 4.05 2.225t4.45 1.325ZM13.65 10l-2.4-2.4q2.4-1.8 5.175-2.775Q19.2 3.85 22.2 3.45v3q-2.35.4-4.5 1.275Q15.55 8.6 13.65 10Zm5.7 22.05v-17.1l13.4 8.55Zm6.85 11.5v-3q6.4-.95 10.6-5.775Q41 29.95 41 23.5t-4.2-11.275Q32.6 7.4 26.2 6.45v-3q7.7.75 12.75 6.525T44 23.5q0 7.75-5.05 13.5T26.2 43.55Z"/></svg></div>Playback speed
+                    <div class="icon chevron">
+                        <svg viewbox="0 0 48 48"><path fill="currentColor" d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                    </div>
+                </li>
+                <li class="drop" data-item="quality">
+                    <div class="icon"><svg viewbox="0 0 48 48"><path fill="currentColor" d="M21.35 42V30.75h3v4.15H42v3H24.35V42ZM6 37.9v-3h12.35v3Zm9.35-8.3v-4.1H6v-3h9.35v-4.2h3v11.3Zm6-4.1v-3H42v3Zm8.3-8.25V6h3v4.1H42v3h-9.35v4.15ZM6 13.1v-3h20.65v3Z"/></svg></div>Quality
+                    <div class="icon chevron">
+                        <svg viewbox="0 0 48 48"><path fill="currentColor" d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                    </div>
+                </li>
+                <li class="drop" data-item="captions">
+                    <div class="icon"><svg viewbox="0 0 48 48"><path fill="currentColor" d="M9 40q-1.2 0-2.1-.9Q6 38.2 6 37V11q0-1.2.9-2.1Q7.8 8 9 8h30q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30V11H9v26Zm4.5-7.05h7.1q.65 0 1.075-.425.425-.425.425-1.075v-2.1h-2.5v1.1h-5.1v-6.9h5.1v1.1h2.5v-2.1q0-.65-.425-1.075-.425-.425-1.075-.425h-7.1q-.65 0-1.075.425Q12 18.9 12 19.55v8.9q0 .65.425 1.075.425.425 1.075.425Zm13.95 0h7.1q.6 0 1.05-.45.45-.45.45-1.05v-2.1h-2.5v1.1h-5.1v-6.9h5.1v1.1h2.5v-2.1q0-.6-.45-1.05-.45-.45-1.05-.45h-7.1q-.6 0-1.05.45-.45.45-.45 1.05v8.9q0 .6.45 1.05.45.45 1.05.45ZM9 37V11v26Z"/></svg></div>Subtitles
+                    <div class="icon chevron">
+                        <svg viewbox="0 0 48 48"><path fill="currentColor" d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                    </div>
+                </li>
+            </ul>
+            <div class="items" id="speed">
+                <div class="label">
+                    <div class="icon back">
+                        <svg viewbox="0 0 55 55">
+                            <path fill="currentColor" d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/>
+                        </svg>
+                    </div>
+                     Playback speed
+                    </div>
+                <ul>
+                    <li><div class="icon"></div>0.25</li>
+                    <li><div class="icon"></div>0.5</li>
+                    <li class="active"><div class="icon"></div>Standard</li>
+                    <li><div class="icon"></div>1.5</li>
+                    <li><div class="icon"></div>2</li>
+                </ul>
+            </div>
+            <div class="items" id="quality">
+                <div class="label">
+                    <div class="icon back">
+                        <svg viewbox="0 0 55 55">
+                            <path fill="currentColor" d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/>
+                        </svg>
+                    </div> 
+                    Quality
+                </div>
+                <ul>
+                    <li><div class="icon"></div>1080p HD</li>
+                    <li><div class="icon"></div>720p HD</li>
+                    <li><div class="icon"></div>480p</li>
+                    <li><div class="icon"></div>360p</li>
+                    <li class="active"><div class="icon"></div>Auto(480p)</li>
+                </ul>
+            </div>
+            <div class="items"id="captions">
+                <div class="label">
+                    <div class="icon back">
+                        <svg viewbox="0 0 55 55">
+                            <path fill="currentColor" d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/>
+                        </svg>
+                    </div>
+                     Subtitles
+                    </div>
+                <ul>
+                    <li><div class="icon"></div>Off</li>
+                    <li class="active"><div class="icon"></div>French</li>
+                    <li><div class="icon"></div>English</li>
+                    <li><div class="icon"></div>Spanish</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <footer>
+        <span>Copyright © 2023  <a href="https://www.youtube.com/@ochokom/featured">OchoKOM</a> | All rights  reserved</span>
+    </footer>
+   <script>
+    const menuBar = document.querySelector('.menu-bar');
+    const items = document.querySelectorAll('.menu-bar li.drop');
+    const menus = document.querySelectorAll('.items');
+    const back = document.querySelectorAll('.back');
+    const speed = document.querySelectorAll('.items#speed li');
+    const quality = document.querySelectorAll('.items#quality li');
+    const captions = document.querySelectorAll('.items#captions li');
+
+
+
+    items.forEach(function (e) {
+        e.addEventListener('click', ()=>{
+            menuBar.classList.add('item');
+            let event = e.getAttribute('data-item')
+            document.getElementById(event).classList.add('active')
+        })
+    })
+    back.forEach(function (e) {
+        e.addEventListener('click', ()=>{
+            e.parentNode.parentNode.classList.remove('active');
+            menuBar.classList.remove('item');
+        })
+    })
+    speed.forEach(function (e) {
+        e.addEventListener('click', ()=>{
+            removeActiveClasses(speed);
+            e.classList.add('active')
+        })
+    })
+    quality.forEach(function (e) {
+        e.addEventListener('click', ()=>{
+            removeActiveClasses(quality);
+            e.classList.add('active')
+        })
+    })
+    captions.forEach(function (e) {
+        e.addEventListener('click', ()=>{
+            removeActiveClasses(captions);
+            e.classList.add('active')
+        })
+    })
+
+    function removeActiveClasses(e) {
+        e.forEach(event =>{
+            event.classList.remove('active')
+        })
+    }
+   </script>
+</body>
+</html>

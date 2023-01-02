@@ -1,0 +1,130 @@
+@import url(./font-awesome.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    color: #f5f5f5;
+}
+::-webkit-scrollbar{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    min-height: 300px;
+    aspect-ratio: 16/9;
+    border: 3px solid blue;
+    border-radius: 5px;
+    background: url(./bg.jpg);
+    background-size: cover;
+}
+.container .settings{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+.container .settings .wrapper{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    max-height: 250px;
+    background: #1c1c1ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.container .settings .wrapper .menu-bar{
+    width: 100%;
+    transition: 0.2s;
+}
+.container .settings .wrapper .menu-bar.item{
+    margin-left: -200px;
+}
+.container .settings .wrapper .items{
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    transition: 0.2s;
+}
+.container .settings .wrapper .items.active{
+    display: block;
+}
+.container .settings .wrapper ul li{
+    padding: 5px;
+    font-size: 0.8em;
+}
+.container .settings .wrapper ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+.container .settings .wrapper ul li:hover{
+    background: #878787e6;
+}
+.container .settings .wrapper .icon.chevron{
+    position: absolute;
+    right: 0;
+}
+.container ul li.active .icon::before{
+    content: '\f058';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Font Awesome 6 Free';
+}
+.container .settings .wrapper .label{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 15px 23px;
+    background: #1b1b1a;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+}
+footer a{
+    color: crimson;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
